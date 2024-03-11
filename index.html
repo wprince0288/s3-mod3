@@ -57,9 +57,9 @@
     // 🧠 So instead of doing `if ('foo') return 'bar' else return 'baz'` do `return 'foo' ? 'bar' : 'baz'`
     // 🧠 The above recommendations allow to write the whole function body in just two clean lines!
 
-    const headAndTail = (arra) => {
-      let [head, ...tail] = arra
-      return arra.length ? [ head, tail ] : "This array is empty"
+    const headAndTail = (arrA) => {
+      let [head, ...tail] = arrA
+      return arrA.length ? [ head, tail ] : "This array is empty"
     }
 
     // 👉 CHALLENGE 3
@@ -72,8 +72,8 @@
     // ❗ Notes
     // 🧠 Use ternary expressions to construct the string.
 
-    const devGreet = () => {
-
+    const devGreet = (isFrontend, isHappy) => {
+      return `Hey, I am a ${isFrontend ? 'frontend' : 'backend'} dev and I am ${isHappy ? 'happy' : 'sad'}`
     }
 
     // 👉 CHALLENGE 4
@@ -129,7 +129,7 @@
     // ❗ Notes
     // 🧠 Even though object properties have no particular order, to avoid confusing
     // the test runner, please set in each object first name, then age, and finally jsLover.
-    
+
     const zip = () => {
 
     }
