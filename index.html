@@ -29,8 +29,9 @@
     // ❗ Notes
     // 🧠 Try using destructuring to grab a reference to the first element of the array
     // 🧠 Try using the at method of arrays to grab the last element
+
     const swapper = (arr) => {
-      if(arr.length < 2) {
+      if (arr.length < 2) {
         return "No swap performed"
       }
       let first = arr[0]
@@ -41,8 +42,6 @@
 
       return arr
     }
-    
-    
 
     // 👉 CHALLENGE 2
     // 🧠 The function headAndTail takes an array as its argument.
@@ -57,8 +56,10 @@
     // 🧠 Try using the ternary operator instead of a conditional statement when deciding what to return.
     // 🧠 So instead of doing `if ('foo') return 'bar' else return 'baz'` do `return 'foo' ? 'bar' : 'baz'`
     // 🧠 The above recommendations allow to write the whole function body in just two clean lines!
-    const headAndTail = () => {
 
+    const headAndTail = (arra) => {
+      let [head, ...tail] = arra
+      return arra.length ? [ head, tail ] : "This array is empty"
     }
 
     // 👉 CHALLENGE 3
@@ -70,6 +71,7 @@
     // devGreet(false, false) // should return "Hey, I am a backend dev and I am sad"
     // ❗ Notes
     // 🧠 Use ternary expressions to construct the string.
+
     const devGreet = () => {
 
     }
@@ -83,6 +85,7 @@
     // recognize({}) // should return "Hidden Person Rocks!"
     // ❗ Notes
     // 🧠 Try using destructuring to grab the name, and a return followed by a ternary expression.
+
     const recognize = () => {
 
     }
@@ -94,6 +97,7 @@
     // processBooleans([1, 0, 0, 1, 0]) // should return ["Y", "N", "N", "Y", "N"]
     // ❗ Notes
     // 🧠 Using map, arrow function syntax, and the ternary, you can make this function a short one-liner
+
     const processBooleans = () => {
 
     }
@@ -108,6 +112,7 @@
     // 🧠 Split the string but do not use the reverse method of arrays. Let's do it manually.
     // 🧠 We suggest using a for loop. Research how to loop backwards over an array, starting at the last element.
     // 🧠 Use a ternary in the return statement.
+
     const reverseString = () => {
 
     }
@@ -124,6 +129,7 @@
     // ❗ Notes
     // 🧠 Even though object properties have no particular order, to avoid confusing
     // the test runner, please set in each object first name, then age, and finally jsLover.
+    
     const zip = () => {
 
     }
