@@ -59,7 +59,7 @@
 
     const headAndTail = (arrA) => {
       let [head, ...tail] = arrA
-      return arrA.length ? [ head, tail ] : "This array is empty"
+      return arrA.length ? [head, tail] : "This array is empty"
     }
 
     // 👉 CHALLENGE 3
@@ -101,7 +101,7 @@
 
     const processBooleans = leans => leans.map(int => int ? "Y" : "N")
 
-    
+
 
     // 👉 CHALLENGE 6
     // 🧠 The function reverseString takes a string as its argument, and returns it reversed.
@@ -114,8 +114,15 @@
     // 🧠 We suggest using a for loop. Research how to loop backwards over an array, starting at the last element.
     // 🧠 Use a ternary in the return statement.
 
-    const reverseString = () => {
-
+    const reverseString = (string) => {
+      const divs = string.split('')
+      const result = []
+      for (let i = divs.length - 1; i >= 0; --i) {
+        let char = divs[i]
+        result.push(char)
+      }
+      const rejoined = result.join('')
+      return (string === rejoined) ? "It's a palindrome!" : rejoined
     }
 
     // 👉 CHALLENGE 7
