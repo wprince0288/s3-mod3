@@ -86,8 +86,9 @@
     // ❗ Notes
     // 🧠 Try using destructuring to grab the name, and a return followed by a ternary expression.
 
-    const recognize = () => {
-
+    const recognize = (person) => {
+      const { name } = person
+      return name ? `${name} Rules!` : "Hidden Person Rocks!"
     }
 
     // 👉 CHALLENGE 5
